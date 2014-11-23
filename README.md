@@ -91,4 +91,13 @@ see [`vars/main.yml`](vars/mail.yml)
 ## Manual Steps
 
   1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
-  3. Install all the Mac App Store Apps (see below).
+  2. Link 1Password and Transmit to Dropbox.
+  3. The doc should look like this
+
+    ![Dock](screenshots/sample-doc.png)
+
+  4. Hot Corners should be set like this
+
+    ![Hot Corners](screenshots/sample-hot-corners.png)
+
+
