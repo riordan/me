@@ -21,6 +21,10 @@
       shell: brew cask alfred link
 
     - name: Install packages with homebrew
+      homebrew: name={{item}} state=present
+      with_items: homebrew.packages
+
+    - name: Install packages with homebrew
       homebrew: name={{item}} state=linked
       with_items: homebrew.packages
 
