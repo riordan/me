@@ -94,7 +94,7 @@ see [`vars/main.yml`](vars/mail.yml)
   2. Link 1Password and Transmit to Dropbox.
   3. The doc should look like this
 
-    ![Dock](screenshots/sample-doc.png)
+    ![Dock](screenshots/sample-dock.png)
 
   4. Hot Corners should be set like this
 
