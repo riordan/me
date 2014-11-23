@@ -14,10 +14,6 @@ oh_my_zsh:
   theme:
     name: abelsonlive
 
-# virtual env settings
-virtual_env:
-  dir: ~/VirtualEnv/
-
 # Homebrew settings
 homebrew:
   packages:
