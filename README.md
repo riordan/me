@@ -1,6 +1,9 @@
 # me
 
+
 An ansible playbook for generating my development environment.
+
+    ![Screen](screenshots/sample-screen.png)
 
 ## Run
 (Assuming you've installed `git`.)
