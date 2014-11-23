@@ -56,6 +56,14 @@
         owner={{user}}
         mode=0644
 
+    - name: Start services at login
+      file: src=/usr/local/opt//homebrew.mxcl..plist path=~/Library/LaunchAgents/homebrew.mxcl..plist state=link force=yes
+      with_items: launchctl.services
+
+    - name: Setup launch agents for services
+      command: launchctl load /Library/LaunchAgents/homebrew.mxcl..plist
+      with_items: launchctl.services
+
 
 
 

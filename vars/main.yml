@@ -61,3 +61,12 @@ pip:
   packages:
   - ipython
   - virtualenvwrapper
+
+launchctl:
+    services:
+        - postgresql
+        - elasticsearch
+        - rabbitmq 
+        - redis 
+
+
