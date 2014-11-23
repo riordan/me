@@ -9,6 +9,9 @@
       homebrew: name={{item}} state=present
       with_items: homebrew.packages
 
+    - name: Install brew cask 
+      command: brew install caskroom/cask/brew-cask
+
     - name: Get list of apps installed with cask via `brew cask list`.
       command: brew cask list
       register: _homebrew_cask_list

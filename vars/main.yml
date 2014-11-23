@@ -21,7 +21,6 @@ virtual_env:
 # Homebrew settings
 homebrew:
   packages:
-    - brew-cask
     - cairo
     - chuck
     - cloog
