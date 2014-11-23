@@ -35,6 +35,7 @@ homebrew:
     app_dir: /Applications
     apps:
     - alfred
+    - dash
     - iterm2
     - openoffice
     - spotify

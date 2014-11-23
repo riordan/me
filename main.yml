@@ -30,7 +30,9 @@
       with_items: pip.packages
 
     - name: Install custom SpaceGrey Theme
-      git: repo={{sublime_text.theme.repo}} dest="/Users/{{user}}/Library/Application\ Support/Sublime\ Text\ 2/Packages/Theme\ -\ {{sublime_text.theme.name}}"
+      git: >
+        repo={{sublime_text.theme.repo}} 
+        dest="/Users/{{user}}/Library/Application Support/Sublime Text 2/Packages/Theme - {{sublime_text.theme.name}}"
       args:
         accept_hostkey: yes
 
