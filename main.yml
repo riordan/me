@@ -18,7 +18,7 @@
       when: "'{{ item }}' not in _homebrew_cask_list.stdout"
 
     - name: Register Alfred with homebrew_cask 
-      shell: brew cask alfred link
+      command: brew cask alfred link
 
     - name: Install packages with homebrew
       homebrew: name={{item}} state=present
@@ -32,10 +32,11 @@
       pip: name={{item}}
       with_items: pip.packages
 
-    - name: Install custom SpaceGrey Theme
+    - name: Install custom SublimeText Themes
       git: >
-        repo={{sublime_text.theme.repo}} 
-        dest="/Users/{{user}}/Library/Application Support/Sublime Text 2/Packages/Theme - {{sublime_text.theme.name}}"
+        repo={{item.repo}} 
+        dest="/Users/{{user}}/Library/Application Support/Sublime Text 2/Packages/Theme - {{item.name}}"
+      with_items:sublime_text.themes
       args:
         accept_hostkey: yes
 

@@ -5,14 +5,12 @@ An ansible playbook for generating my development environment.
 ## Installation
 (Assuming you've installed `git`.)
 ``` 
-git clone https://github.com/abelsonlive/me.git
-cd me/
-./run.sh 
+$ git clone https://github.com/abelsonlive/me.git
+$ cd me/
+$ make all
 ```
 
 This script will prompt you to install xcode command line tools and ask you for your system password twice.
-
-
 
 ## Configuration 
 
@@ -95,12 +93,14 @@ see [`vars/main.yml`](vars/mail.yml)
 ## Manual Steps
 
   1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
-  2. Link 1Password and Transmit to Dropbox.
-  3. The doc should look like this
+  2. Activate Sublime Text Themes.
+  3. Import itemcolors into iTerms2
+  4. Link 1Password and Transmit to Dropbox.
+  5. Make the dock look like this
 
     ![Dock](screenshots/sample-dock.png)
 
-  4. Hot Corners should be set like this
+  6. Set Hot Corners like this
 
     ![Hot Corners](screenshots/sample-hot-corners.png)
 

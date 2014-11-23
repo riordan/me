@@ -10,9 +10,11 @@ git:
 # Sublime Text Settings:
 
 sublime_text:
-  theme:
-    repo: git://github.com/mhkeller/spacegray.git
-    name: SpaceGreyKeller
+  themes:
+    - repo: git://github.com/mhkeller/spacegray.git
+      name: SpaceGrayKeller
+    - repo: git://github.com/kkga/spacegray.git
+      name: SpaceGray
 
 # oh-my-zsh settings
 oh_my_zsh:
