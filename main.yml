@@ -36,9 +36,9 @@
       git: >
         repo={{item.repo}} 
         dest="/Users/{{user}}/Library/Application Support/Sublime Text 2/Packages/Theme - {{item.name}}"
-      with_items:sublime_text.themes
-      args:
-        accept_hostkey: yes
+        accept_hostkey=yes
+      with_items: sublime_text.themes
+        
 
     - name: Generate custom ~/.zshrc file
       template: >

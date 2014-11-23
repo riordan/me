@@ -1,3 +1,4 @@
+
 requirements:
 
 	# install xcode
@@ -24,6 +25,5 @@ build:
 	ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
 
 all:
-	sh init.sh
 	make requirements
 	make build
