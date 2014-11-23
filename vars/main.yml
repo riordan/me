@@ -64,10 +64,10 @@ pip:
   - virtualenvwrapper
 
 launchctl:
-    services:
-        - postgresql
-        - elasticsearch
-        - rabbitmq 
-        - redis 
+  services:
+    - postgresql
+    - elasticsearch
+    - rabbitmq 
+    - redis 
 
 
