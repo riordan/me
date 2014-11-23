@@ -1,30 +1,61 @@
 ---
-- hosts: self
-  user: jgeerling
-  connection: local
+- hosts: localhost
 
   vars_files:
     - vars/main.yml
 
-  roles:
-    - geerlingguy.homebrew
-
   tasks:
-    - name: Ensure Ansible downloads directory exists.
-      file:
-        path: "{{ downloads }}"
-        state: directory
+    - name: Install packages with homebrew
+      homebrew: name={{item}} state=present
+      with_items: homebrew.packages
 
-    - include: tasks/dotfiles.yml
-    - include: tasks/preferences.yml
-
-    - name: Get list of apps installed with cask.
+    - name: Get list of apps installed with cask via `brew cask list`.
       command: brew cask list
-      register: homebrew_cask_list
+      register: _homebrew_cask_list
       changed_when: false
 
     - name: Install apps via `brew cask`.
       command: >
-        brew cask install {{ item }} --appdir={{ homebrew_cask_appdir }}
-      with_items: homebrew_cask_apps
-      when: "'{{ item }}' not in homebrew_cask_list.stdout"
+        brew cask install {{ item }} --appdir={{ homebrew.cask.app_dir }}
+      with_items: homebrew.cask.apps
+      when: "'{{ item }}' not in _homebrew_cask_list.stdout"
+
+    - name: Register Alfred with homebrew_cask 
+      shell: brew cask alfred link
+
+    - name: Install pip packages
+      pip: name={{item}}
+      with_items: pip.packages
+
+    - name: Install custom SpaceGrey Theme
+      git: repo={{sublime_text.theme.repo}} dest="/Users/{{user}}/Library/Application\ Support/Sublime\ Text\ 2/Packages/Theme\ -\ {{sublime_text.theme.name}}"
+      args:
+        accept_hostkey: yes
+
+    - name: Install oh-my-zsh 
+      git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=/Users/{{user}}/{{oh_my_zsh.dir}}
+      args:
+        accept_hostkey: yes
+
+    - name: Check if custom .zsh-theme exists
+      stat: path=files/{{oh_my_zsh.theme.name}}.zsh-theme
+      register: custom_theme
+
+    - name: Copy custom them to oh-my-zsh dir
+      copy: src=files/{{oh_my_zsh.theme.name}}.zsh-theme dest=/Users/{{user}}/{{oh_my_zsh.dir}}/themes/
+      when: ! custom_theme.stat.exists
+
+    - name: Generate custom ~/.zshrc file
+      template: >
+        src=templates/zshrc.j2
+        dest=/Users/{{user}}/.zshrc
+        owner={{user}}
+        mode=0644
+
+
+
+
+
+
+
+

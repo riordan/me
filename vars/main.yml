@@ -1,55 +1,99 @@
 ---
-downloads: ~/.ansible-downloads/
+user: brianabelson
 
-homebrew_installed_packages:
-  - autoconf
-  - gettext
-  - libevent
-  - packer
-  - python
-  - sqlite
-  - mysql
-  - php56
-  - php56-xdebug
-  - ssh-copy-id
-  - cowsay
-  - ios-sim
-  - readline
-  - subversion
-  - kdiff3
-  - openssl
-  - pv
-  - drush
-  - wget
-  - caskroom/cask/brew-cask
+# Sublime Text Settings:
 
-homebrew_taps:
-  - caskroom/cask
-  - homebrew/binary
-  - homebrew/dupes
-  - homebrew/php
-  - homebrew/versions
-  - homebrew/homebrew-php
+sublime_text:
+  theme:
+    repo: git://github.com/mhkeller/spacegray.git
+    name: SpaceGreyKeller
 
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - adium
-  - bettertouchtool
-  - google-chrome
-  - dropbox
-  - firefox
-  - handbrake
-  - karabiner
-  - menumeters
-  - nvalt
-  - sequel-pro
-  - skype
-  - skitch
-  - seil
-  - sublime-text # Note - Sublime Text 2 only, at this time...
-  - tower
-  - transmit
-  - vlc
-  - vagrant
-  - vagrant-manager
-  - virtualbox
+# oh-my-zsh settings
+oh_my_zsh:
+  dir: ".oh-my-zsh"
+  theme:
+    name: abelsonlive
+
+# virtual env settings
+virtual_env:
+  dir: ~/VirtualEnv/
+
+# Homebrew settings
+homebrew:
+  packages:
+    - brew-cask
+    - cairo
+    - chuck
+    - cloog
+    - elasticsearch
+    - faac
+    - ffmpeg
+    - fontconfig
+    - freetype
+    - freexl
+    - gcc
+    - gdal
+    - geos
+    - gettext
+    - giflib
+    - git
+    - glib
+    - gmp
+    - gpp
+    - isl
+    - jpeg
+    - json-c
+    - lame
+    - libffi
+    - libgeotiff
+    - liblwgeom
+    - libmpc
+    - libpng
+    - libspatialite
+    - libtiff
+    - libxml2
+    - lzlib
+    - mpfr
+    - openssl
+    - ossp-uuid
+    - pixman
+    - pkg-config
+    - postgresql
+    - proj
+    - r
+    - readline
+    - redis
+    - sqlite
+    - wget
+    - x264
+
+  cask:
+    app_dir: /Applications
+    apps:
+    - audio-hijack-pro
+    - alfred
+    - iterm2
+    - openoffice
+    - spotify
+    - tunnelbear
+    - dropbox
+    - java
+    - pg-commander
+    - sublime-text
+    - vagrant
+    - gdal-framework
+    - mapbox-studio
+    - postgres
+    - tilemill
+    - virtualbox
+    - google-chrome
+    - onepassword
+    - soundflower
+    - transmit
+    - xquartz
+
+# python packages
+pip:
+  packages:
+  - ipython
+  - virtualenvwrapper
