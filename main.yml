@@ -60,6 +60,14 @@
         owner={{user}}
         mode=0644
 
+    - name: Register Git user
+      command: >
+        git config --global user.name "{{git.global.user_name}}"
+
+    - name: Register Git email
+      command: >
+        git config --global user.email "{{git.global.user_email}}"
+
     - name: Start services at login
       file: src=/usr/local/opt//homebrew.mxcl..plist path=~/Library/LaunchAgents/homebrew.mxcl..plist state=link force=yes
       with_items: launchctl.services

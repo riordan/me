@@ -1,6 +1,12 @@
 ---
 user: brianabelson
 
+# git settings
+git:
+    global:
+        user_name: abelsonlive
+        user_email: brianabelson@gmail.com
+
 # Sublime Text Settings:
 
 sublime_text:
