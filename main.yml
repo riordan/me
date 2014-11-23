@@ -5,7 +5,7 @@
     - vars/main.yml
 
   tasks:
-  
+
     - name: Get list of apps installed with cask via `brew cask list`.
       command: brew cask list
       register: _homebrew_cask_list
@@ -26,6 +26,7 @@
 
     - name: Install pip packages
       pip: name={{item}}
+      sudo: yes
       with_items: pip.packages
 
     - name: Install custom SpaceGrey Theme
