@@ -8,14 +8,11 @@ An ansible playbook for generating my development environment.
 1. Clone the repository:
   - `git clone https://github.com/abelsonlive/me.git && cd me/`
 
-2. Install xcode:
-  - `xcode-select --install`
-  
-3. Install build requirements
+2. Install build requirements
   - `./init.sh`
   - This script will prompt you to install xcode command line tools and ask you for your system password.
 
-4. Build System
+3. Build System
   - `make build`
 
 ## Configuration 
@@ -94,7 +91,6 @@ see [`vars/main.yml`](vars/mail.yml)
 * iTerm2 
 
   - [Michael Keller's](http://twitter.com/mhkeller) custom [iterm color set](files/SpaceGrayEighties.itermcolors) is included (though you'll have to activate import it manually into the App).
-
 
 ## Manual Steps
 
