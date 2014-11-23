@@ -76,13 +76,16 @@ see [`vars/main.yml`](vars/mail.yml)
 
   - My custom `.zsh-theme` is installed (see [files/abelsonlve.zsh-theme](files/abelsonlve.zsh-theme)])
 
+* Git 
+  - global username and email are set.
+
 * Sublime Text 
 
-  - [Michael Keller's](http://twitter.com/mhkeller)] custom `sublime-text` theme is installed (though you'll have to activate it manually in the app.
+  - [Michael Keller's](http://twitter.com/mhkeller) custom [sublime-text theme](git://github.com/mhkeller/spacegray.git) is installed (though you'll have to activate it manually in the app.
 
 * iTerm2 
 
-  - [Michael Keller's](http://twitter.com/mhkeller)] custom [sublime-text theme](git://github.com/mhkeller/spacegray.git) is installed (though you'll have to activate it manually in the app
+  - [Michael Keller's](http://twitter.com/mhkeller) custom [iterm color set](files/SpaceGrayEighties.itermcolors) is included (though you'll have to activate import it manually into the App).
 
 
 ## Manual Steps
