@@ -18,13 +18,11 @@ oh_my_zsh:
 homebrew:
   packages:
     - gcc 
-    - java
     - wget 
     - postgresql
     - mysql
     - sqlite
     - gdal
-    - postgis
     - redis
     - elasticsearch 
     - rabbitmq 

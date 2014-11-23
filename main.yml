@@ -5,9 +5,7 @@
     - vars/main.yml
 
   tasks:
-    - name: Install brew cask 
-      command: brew install caskroom/cask/brew-cask
-
+  
     - name: Get list of apps installed with cask via `brew cask list`.
       command: brew cask list
       register: _homebrew_cask_list
@@ -23,7 +21,7 @@
       shell: brew cask alfred link
 
     - name: Install packages with homebrew
-      homebrew: name={{item}} state=present
+      homebrew: name={{item}} state=linked
       with_items: homebrew.packages
 
     - name: Install pip packages
