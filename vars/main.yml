@@ -49,6 +49,7 @@ homebrew:
     - tunnelbear
     - dropbox
     - java
+    - skype
     - pg-commander
     - sublime-text
     - vagrant
