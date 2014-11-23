@@ -3,7 +3,7 @@
 An ansible playbook for generating my development environment.
 
 ## Installation
-(Assuming you've installed git.)
+(Assuming you've installed `git`.)
 ``` 
 git clone https://github.com/abelsonlive/me.git
 cd me/
@@ -11,6 +11,8 @@ cd me/
 ```
 
 This script will prompt you to install xcode command line tools and ask you for your system password twice.
+
+
 
 ## Configuration 
 
