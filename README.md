@@ -10,9 +10,7 @@ cd me/
 ./run.sh 
 ```
 
-This will prompt you to install xcode command line tools and ask you for your system password twice.
-
-
+This script will prompt you to install xcode command line tools and ask you for your system password twice.
 
 ## Configuration 
 
