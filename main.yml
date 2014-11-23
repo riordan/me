@@ -30,7 +30,6 @@
 
     - name: Install pip packages
       pip: name={{item}}
-      sudo: yes
       with_items: pip.packages
 
     - name: Install custom SpaceGrey Theme
@@ -40,10 +39,12 @@
       args:
         accept_hostkey: yes
 
-    - name: Install oh-my-zsh 
-      git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=/Users/{{user}}/{{oh_my_zsh.dir}}
-      args:
-        accept_hostkey: yes
+    - name: Generate custom ~/.zshrc file
+      template: >
+        src=templates/zshrc.j2
+        dest=/Users/{{user}}/.zshrc
+        owner={{user}}
+        mode=0644
 
     - name: Check if custom .zsh-theme exists
       stat: path=files/{{oh_my_zsh.theme.name}}.zsh-theme
@@ -52,13 +53,6 @@
     - name: Copy custom them to oh-my-zsh dir
       copy: src=files/{{oh_my_zsh.theme.name}}.zsh-theme dest=/Users/{{user}}/{{oh_my_zsh.dir}}/themes/
       when: ! custom_theme.stat.exists
-
-    - name: Generate custom ~/.zshrc file
-      template: >
-        src=templates/zshrc.j2
-        dest=/Users/{{user}}/.zshrc
-        owner={{user}}
-        mode=0644
 
     - name: Register Git user
       command: >

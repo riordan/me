@@ -14,6 +14,9 @@ sudo easy_install pip
 # install ansible 
 sudo pip install ansible 
 
+# install zsh
+sudo curl -L http://install.ohmyz.sh | sh 
+
 # run playbook
 ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
 
