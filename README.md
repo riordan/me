@@ -10,6 +10,10 @@ cd me/
 ./run.sh 
 ```
 
+This will prompt you to install xcode command line tools and ask you for your system password twice.
+
+
+
 ## Configuration 
 
 see [`vars/main.yml`](vars/mail.yml)
