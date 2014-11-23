@@ -21,55 +21,25 @@ virtual_env:
 # Homebrew settings
 homebrew:
   packages:
-    - cairo
-    - chuck
-    - cloog
-    - elasticsearch
-    - faac
-    - ffmpeg
-    - fontconfig
-    - freetype
-    - freexl
-    - gcc
-    - gdal
-    - geos
-    - gettext
-    - giflib
-    - git
-    - glib
-    - gmp
-    - gpp
-    - isl
-    - jpeg
-    - json-c
-    - lame
-    - libffi
-    - libgeotiff
-    - liblwgeom
-    - libmpc
-    - libpng
-    - libspatialite
-    - libtiff
-    - libxml2
-    - lzlib
-    - mpfr
-    - openssl
-    - ossp-uuid
-    - pixman
-    - pkg-config
+    - gcc 
+    - java
+    - wget 
     - postgresql
-    - proj
-    - r
-    - readline
-    - redis
+    - mysql
     - sqlite
-    - wget
-    - x264
+    - gdal
+    - postgis
+    - redis
+    - elasticsearch 
+    - rabbitmq 
+    - ffmpeg
+    - git
+    - libevent
+
 
   cask:
     app_dir: /Applications
     apps:
-    - audio-hijack-pro
     - alfred
     - iterm2
     - openoffice
