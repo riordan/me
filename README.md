@@ -2,15 +2,21 @@
 
 An ansible playbook for generating my development environment.
 
-## Installation
+## Run
 (Assuming you've installed `git`.)
-``` 
-$ git clone https://github.com/abelsonlive/me.git
-$ cd me/
-$ make all
-```
 
-This script will prompt you to install xcode command line tools and ask you for your system password twice.
+1. Clone the repository:
+  - `git clone https://github.com/abelsonlive/me.git && cd me/`
+
+2. Install xcode:
+  - `xcode-select --install`
+  
+3. Install build requirements
+  - `./init.sh`
+  - This script will prompt you to install xcode command line tools and ask you for your system password.
+
+4. Build System
+  - `make build`
 
 ## Configuration 
 
