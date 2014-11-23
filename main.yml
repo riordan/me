@@ -38,6 +38,7 @@
         dest="/Users/{{user}}/Library/Application Support/Sublime Text 2/Packages/Theme - {{item.name}}"
         accept_hostkey=yes
       with_items: sublime_text.themes
+      ignore_errors: yes
         
 
     - name: Generate custom ~/.zshrc file
