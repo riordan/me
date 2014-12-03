@@ -26,6 +26,7 @@ oh_my_zsh:
 homebrew:
   packages:
     - gcc 
+    - jq
     - wget 
     - postgresql
     - mysql
@@ -43,6 +44,7 @@ homebrew:
     app_dir: /Applications
     apps:
     - alfred
+    - mailplane
     - dash
     - iterm2
     - slack
@@ -70,6 +72,7 @@ homebrew:
 pip:
   packages:
   - ipython
+  - csvkit
   - virtualenvwrapper
 
 launchctl:
