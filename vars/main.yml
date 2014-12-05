@@ -25,6 +25,7 @@ oh_my_zsh:
 # Homebrew settings
 homebrew:
   packages:
+    - poppler
     - gcc 
     - jq
     - wget 
