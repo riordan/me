@@ -40,6 +40,7 @@ homebrew:
     - git
     - libevent
     - node
+    - tmux
 
 
   cask:
