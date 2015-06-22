@@ -69,6 +69,7 @@ homebrew:
     - transmit
     - xquartz
     - flowdock
+    - caffeine
 
 # python packages
 pip:
