@@ -67,6 +67,7 @@ homebrew:
     - soundflower
     - transmit
     - xquartz
+    - flowdock
 
 # python packages
 pip:
