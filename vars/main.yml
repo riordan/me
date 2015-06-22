@@ -1,11 +1,11 @@
 ---
-user: brianabelson
+user: driordan
 
 # git settings
 git:
   global:
-    user_name: abelsonlive
-    user_email: brianabelson@gmail.com
+    user_name: Riordan
+    user_email: david.riordan@gmail.com
 
 # Sublime Text Settings:
 
@@ -39,24 +39,22 @@ homebrew:
     - ffmpeg
     - git
     - libevent
+    - node
 
 
   cask:
     app_dir: /Applications
     apps:
-    - alfred
-    - mailplane
-    - dash
     - iterm2
     - slack
-    - openoffice
-    - spotify
-    - tunnelbear
+    - libreoffice
+    - rdio
     - dropbox
     - java
     - skype
     - pg-commander
     - sublime-text
+    - atom
     - vagrant
     - gdal-framework
     - mapbox-studio
@@ -64,6 +62,7 @@ homebrew:
     - tilemill
     - virtualbox
     - google-chrome
+    - firefox
     - onepassword
     - soundflower
     - transmit
@@ -80,7 +79,3 @@ launchctl:
   services:
     - postgresql
     - elasticsearch
-    - rabbitmq 
-    - redis 
-
-
