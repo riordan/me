@@ -26,21 +26,29 @@ oh_my_zsh:
 homebrew:
   packages:
     - poppler
-    - gcc 
+    - gcc
+    - python
     - jq
-    - wget 
+    - pandoc
+    - wget
     - postgresql
     - mysql
     - sqlite
     - gdal
     - redis
-    - elasticsearch 
-    - rabbitmq 
+    - elasticsearch
+    - rabbitmq
     - ffmpeg
     - git
     - libevent
     - node
     - tmux
+    - opencv
+    - boost
+    - boost-python
+    - protobuf
+    - hub
+    - heroku-toolbelt
 
 
   cask:
@@ -53,7 +61,6 @@ homebrew:
     - dropbox
     - java
     - skype
-    - pg-commander
     - sublime-text
     - atom
     - vagrant
@@ -71,6 +78,14 @@ homebrew:
     - flowdock
     - caffeine
     - satellite-eyes
+    - vlc
+    - kitematic
+    - josm
+    - colloquy
+    - pgadmin3
+    - torbrowser
+    - qgis
+
 
 # python packages
 pip:
