@@ -49,6 +49,7 @@ homebrew:
     - protobuf
     - hub
     - heroku-toolbelt
+    - sl
 
 
   cask:
