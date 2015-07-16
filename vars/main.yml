@@ -72,7 +72,6 @@ homebrew:
     - google-chrome
     - firefox
     - onepassword
-    - soundflower
     - transmit
     - xquartz
     - flowdock
@@ -85,6 +84,9 @@ homebrew:
     - pgadmin3
     - torbrowser
     - qgis
+    - thunderbird
+    - tunnelblick
+    - gpgtools
 
 
 # python packages
