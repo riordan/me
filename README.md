@@ -98,6 +98,7 @@ see [`vars/main.yml`](vars/mail.yml)
   - automake
   - libtool
   - pkg-config
+  - htop
 
 * Launchd services:
     - Nothing currently. Use Docker for this unless absolutely necessary.

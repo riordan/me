@@ -43,6 +43,7 @@ homebrew:
     - automake
     - libtool
     - pkg-config
+    - htop
 
 
   cask:
