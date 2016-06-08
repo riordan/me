@@ -60,7 +60,7 @@ homebrew:
     - virtualbox
     - google-chrome
     - firefox
-    - onepassword
+    - 1password
     - xquartz
     - caffeine
     - satellite-eyes
@@ -77,6 +77,8 @@ homebrew:
     - evernote
     - rstudio
     - cyberduck
+    - little-snitch
+    - micro-snitch
 
 
 # python packages

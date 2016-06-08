@@ -60,6 +60,8 @@ see [`vars/main.yml`](vars/mail.yml)
   - evernote
   - rstudio
   - cyberduck
+  - little-snitch
+  - micro-snitch
 
 * Homebrew packages
 

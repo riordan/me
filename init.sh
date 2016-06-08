@@ -12,11 +12,8 @@ brew install gcc
 # install pip
 sudo easy_install pip
 
-# upgrade setuptools
-sudo pip install --upgrade setuptools
-
-# install ansible
-sudo pip install ansible
+# install ansible with changes for El Capitan
+sudo pip install --upgrade --ignore-installed ansible
 
 # install zsh (HACK FOR NOW)
 sudo curl -L http://install.ohmyz.sh | sh
