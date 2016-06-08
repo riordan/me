@@ -8,8 +8,11 @@ An ansible playbook for generating my development environment.
 ## Run
 (Assuming you've installed `git`.)
 
+0. Install Git:
+  - Open Terminal and type `git`. OSX will prompt you to install OSX Developer Tools. Do that.
+
 1. Clone the repository:
-  - `git clone https://github.com/abelsonlive/me.git && cd me/`
+  - `git clone https://github.com/riordan/me.git && cd me/`
 
 2. Install build requirements
   - `./init.sh`
@@ -115,3 +118,4 @@ see [`vars/main.yml`](vars/mail.yml)
 
   1. Link 1Password to Dropbox.
   2. Install [Docker Mac Beta](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/)
+  3. Set up browser plugins

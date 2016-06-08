@@ -12,8 +12,11 @@ brew install gcc
 # install pip
 sudo easy_install pip
 
-# install ansible 
-sudo pip install ansible 
+# upgrade setuptools
+sudo pip install --upgrade setuptools
+
+# install ansible
+sudo pip install ansible
 
 # install zsh (HACK FOR NOW)
-sudo curl -L http://install.ohmyz.sh | sh 
+sudo curl -L http://install.ohmyz.sh | sh
