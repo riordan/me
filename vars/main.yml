@@ -4,52 +4,45 @@ user: driordan
 # git settings
 git:
   global:
-    user_name: Riordan
+    user_name: David Riordan
     user_email: dr@daveriordan.com
-
-# Sublime Text Settings:
-
-sublime_text:
-  themes:
-    - repo: git://github.com/mhkeller/spacegray.git
-      name: SpaceGrayKeller
-    - repo: git://github.com/kkga/spacegray.git
-      name: SpaceGray
-
-# oh-my-zsh settings
-oh_my_zsh:
-  dir: ".oh-my-zsh"
-  theme:
-    name: abelsonlive
 
 # Homebrew settings
 homebrew:
   packages:
+    - git
     - poppler
     - gcc
-    - python
-    - jq
+    - clang
+    - python2
+    - python3
     - pandoc
     - wget
     - postgresql
-    - mysql
     - sqlite
     - gdal
-    - redis
-    - elasticsearch
-    - rabbitmq
-    - ffmpeg
-    - git
     - libevent
     - node
+    - n
     - tmux
-    - opencv
     - boost
     - boost-python
     - protobuf
     - hub
     - heroku-toolbelt
-    - sl
+    - gnupg2
+    - vim
+    - awscli
+    - ykpers
+    - go --cross-compile-common
+    - hg
+    - bzr
+    - svn
+    - snappy
+    - autoconf
+    - automake
+    - libtool
+    - pkg-config
 
 
   cask:
@@ -58,36 +51,32 @@ homebrew:
     - iterm2
     - slack
     - libreoffice
-    - rdio
     - dropbox
     - java
     - skype
-    - sublime-text
     - atom
     - vagrant
     - gdal-framework
-    - mapbox-studio
-    - postgres
-    - tilemill
     - virtualbox
     - google-chrome
     - firefox
     - onepassword
-    - transmit
     - xquartz
-    - flowdock
     - caffeine
     - satellite-eyes
     - vlc
-    - kitematic
     - josm
     - colloquy
     - pgadmin3
     - torbrowser
     - qgis
-    - thunderbird
+    - nylas-n1
     - tunnelblick
     - gpgtools
+    - spotify
+    - evernote
+    - rstudio
+    - cyberduck
 
 
 # python packages
@@ -96,8 +85,11 @@ pip:
   - ipython
   - csvkit
   - virtualenvwrapper
+  - ipython[notebook]
+  - numpy
+  - scipy
+  - matplotlib
 
 launchctl:
   services:
-    - postgresql
-    - elasticsearch
+    #none needed

@@ -18,7 +18,7 @@ An ansible playbook for generating my development environment.
 3. Build System
   - `make build`
 
-## Configuration 
+## Configuration
 
 see [`vars/main.yml`](vars/mail.yml)
 
@@ -28,85 +28,90 @@ see [`vars/main.yml`](vars/mail.yml)
 
 * Homebrew casks
 
-  - alfred
-  - dash
   - iterm2
   - slack
-  - openoffice
-  - spotify
-  - tunnelbear
+  - libreoffice
   - dropbox
   - java
-  - pg-commander
-  - sublime-text
   - skype
+  - atom
   - vagrant
   - gdal-framework
-  - mapbox-studio
-  - postgres
-  - tilemill
   - virtualbox
   - google-chrome
+  - firefox
   - onepassword
-  - soundflower
-  - transmit
   - xquartz
+  - caffeine
+  - satellite-eyes
+  - vlc
+  - josm
+  - colloquy
+  - pgadmin3
+  - torbrowser
+  - qgis
+  - nylas-n1
+  - tunnelblick
+  - gpgtools
+  - spotify
+  - evernote
+  - rstudio
+  - cyberduck
 
 * Homebrew packages
 
-  - gcc 
-  - wget 
+  - git
+  - poppler
+  - gcc
+  - clang
+  - python2
+  - python3
+  - pandoc
+  - wget
   - postgresql
-  - mysql
   - sqlite
   - gdal
-  - redis
-  - elasticsearch 
-  - rabbitmq 
-  - ffmpeg
-  - git
   - libevent
+  - node
+  - n
+  - tmux
+  - boost
+  - boost-python
+  - protobuf
+  - hub
+  - heroku-toolbelt
+  - gnupg2
+  - vim
+  - awscli
+  - ykpers
+  - go --cross-compile-common
+  - hg
+  - bzr
+  - svn
+  - snappy
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
 
-* Launchd services
+* Launchd services:
+    - Nothing currently. Use Docker for this unless absolutely necessary.
 
-  - postgresql
-  - elasticsearch
-  - rabbitmq 
-  - redis 
 
-* Python packages 
+* Python packages
 
   - pip
   - ipython
   - virtualenvwrapper
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
 
-* Oh-My-Zsh 
-
-  - My custom `.zsh-theme` is installed (see [files/abelsonlve.zsh-theme](files/abelsonlve.zsh-theme)])
-
-* Git 
+* Git
   - global username and email are set.
-
-* Sublime Text 
-
-  - [Michael Keller's](http://twitter.com/mhkeller) custom [sublime-text theme](git://github.com/mhkeller/spacegray.git) is installed (though you'll have to activate it manually in the app.
-
-* iTerm2 
-
-  - [Michael Keller's](http://twitter.com/mhkeller) custom [iterm color set](files/SpaceGrayEighties.itermcolors) is included (though you'll have to activate import it manually into the App).
 
 ## Manual Steps
 
-  1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
-  2. Activate Sublime Text Themes.
-  3. Import itemcolors into iTerms2
-  4. Link 1Password and Transmit to Dropbox.
-  5. Make the dock look like this
-
-    ![Dock](screenshots/sample-dock.png)
-
-  6. Set Hot Corners like this
-
-    ![Hot Corners](screenshots/sample-hot-corners.png)
-
-
+  1. Link 1Password to Dropbox.
+  2. Install [Docker Mac Beta](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/)
