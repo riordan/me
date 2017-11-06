@@ -26,13 +26,10 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - git
       - go
 
-    mas_installed_apps:
-      - { id: 443987910, name: "1Password" }
-      - { id: 498486288, name: "Quick Resizer" }
-      - { id: 557168941, name: "Tweetbot" }
-      - { id: 497799835, name: "Xcode" }
+## What about dotfiles
+They're at: https://github.com/riordan/dotfiles
 
-Any variable can be overridden in `config.yml`; see the supporting roles' documentation for a complete list of available variables.
+Update them there or change the location
 
 ## Included Applications / Configuration (Default)
 homebrew_installed_packages:
