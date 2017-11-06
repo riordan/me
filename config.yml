@@ -82,6 +82,7 @@ homebrew_cask_apps:
   - colloquy
   - java
   - libreoffice
+  - tad
   # CTF specific
   - soqlxplorer
 
