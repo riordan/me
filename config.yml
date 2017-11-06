@@ -1,0 +1,83 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_sudoers: yes
+
+dotfiles_repo: https://github.com/riordan/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/code/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitconfig
+  - .gitignore
+  - .macos
+  - .aliases
+  - .exports
+  - .vimrc
+
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - homebrew/science
+
+homebrew_installed_packages:
+  - zsh
+  - zsh-completions
+  - gnupg
+  - git
+  - git-lfs
+  - hub
+  - sqlite
+  - node
+  - nvm
+  - wget
+  - gifsicle
+  - go
+  - python3
+  - python
+  - gcc
+  - ykpers
+  - gdal
+  - tmux
+  - boost
+  - boost-python
+  - vim
+  - htop
+  - pinentry-mac
+  - libyubikey
+  - imagemagick --with-webp
+
+
+homebrew_cask_apps:
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - spotify
+  - skitch
+  - slack
+  - atom
+  - cyberduck
+  - evernote
+  - omnifocus
+  - omnioutliner
+  - 1password
+  - scrivener
+  - signal
+  - sketch
+  - vagrant
+  - virtualbox
+  - tomighty
+  - torbrowser
+  - zotero
+  - iterm2
+  - satellite-eyes
+  - vlc
+  - little-snitch
+  - colloquy
+  - java
+  - libreoffice
+  # CTF specific
+  - soqlxplorer
