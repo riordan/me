@@ -91,6 +91,7 @@ homebrew_cask_apps:
   - libreoffice
   # CTF specific
   - soqlxplorer
+  - eclipse-java
 
   pip_install_packages:
     - awscli

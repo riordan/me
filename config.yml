@@ -85,6 +85,7 @@ homebrew_cask_apps:
   - tad
   # CTF specific
   - soqlxplorer
+  - eclipse-java
 
   pip_install_packages:
     - awscli
