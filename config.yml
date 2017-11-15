@@ -49,7 +49,7 @@ homebrew_installed_packages:
   - htop
   - pinentry-mac
   - libyubikey
-  - imagemagick --with-webp
+  - imagemagick
 
 homebrew_cask_apps:
   - docker
@@ -82,6 +82,7 @@ homebrew_cask_apps:
   - java
   - libreoffice
   - tad
+  - caffeine
   - soqlxplorer # CTF specific
   - eclipse-java
   - sfdx
