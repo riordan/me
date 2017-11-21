@@ -23,6 +23,7 @@ homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - homebrew/science
+  - osgeo/osgeo4mac
 
 homebrew_installed_packages:
   - zsh
@@ -50,6 +51,9 @@ homebrew_installed_packages:
   - pinentry-mac
   - libyubikey
   - imagemagick
+  - docker-completion
+  - docker-compose-completion
+  - thefuck
 
 homebrew_cask_apps:
   - docker
@@ -83,9 +87,12 @@ homebrew_cask_apps:
   - libreoffice
   - tad
   - caffeine
+  - krita
+  - google-earth-pro
   - soqlxplorer # CTF specific
   - eclipse-java
   - sfdx
+  - google-drive-file-stream
 
 pip_install_packages:
     - awscli
