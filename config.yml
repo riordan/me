@@ -89,6 +89,7 @@ homebrew_cask_apps:
   - caffeine
   - krita
   - google-earth-pro
+  - alfred
   - soqlxplorer # CTF specific
   - eclipse-java
   - sfdx
