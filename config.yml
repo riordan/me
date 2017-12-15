@@ -26,75 +26,155 @@ homebrew_taps:
   - osgeo/osgeo4mac
 
 homebrew_installed_packages:
-  - zsh
-  - zsh-completions
-  - gnupg
-  - git
-  - git-lfs
-  - hub
-  - sqlite
-  - node
-  - nvm
-  - wget
-  - gifsicle
-  - go
-  - python3
-  - python
-  - gcc
-  - ykpers
-  - gdal
-  - tmux
+  - adns
+  - armadillo
+  - arpack
+  - autoconf
+  - automake
+  - bash-completion
   - boost
   - boost-python
-  - vim
-  - htop
-  - pinentry-mac
-  - libyubikey
-  - imagemagick
+  - cfitsio
   - docker-completion
   - docker-compose-completion
-  - thefuck
+  - epsilon
+  - freetype
+  - freexl
+  - gcc
+  - gdal
+  - gdal2
+  - gdbm
+  - geos
+  - gettext
+  - giflib
+  - gifsicle
+  - git
+  - git-lfs
+  - gmp
+  - gnupg
+  - gnutls
+  - go
+  - gpg-agent
+  - hdf5
+  - heroku
+  - heroku-node
+  - htop
+  - hub
+  - icu4c
+  - imagemagick
+  - isl
+  - jasper
+  - jpeg
+  - json-c
+  - libassuan
+  - libdap
+  - libevent
+  - libffi
+  - libgcrypt
+  - libgeotiff
+  - libgpg-error
+  - libkml-dev
+  - libksba
+  - liblwgeom
+  - libmpc
+  - libpng
+  - libspatialite
+  - libtasn1
+  - libtiff
+  - libtool
+  - libunistring
+  - libusb
+  - libxml2
+  - libyaml
+  - libyubikey
+  - little-cms2
+  - mpfr
+  - netcdf
+  - nettle
+  - node
+  - npth
+  - nvm
+  - openjpeg
+  - openssl
+  - openssl@1.1
+  - p11-kit
   - pandoc
+  - pcre
+  - perl
+  - pinentry
+  - pinentry-mac
+  - popt
+  - proj
+  - pth
+  - python
+  - python3
+  - readline
+  - ruby
+  - sqlite
+  - superlu
+  - szip
+  - thefuck
+  - tmux
+  - unixodbc
+  - veclibfort
+  - vim
+  - webp
+  - wget
+  - xerces-c
+  - xz
+  - ykpers
+  - you-get
+  - zsh
+  - zsh-completions
 
 homebrew_cask_apps:
+  - 1password
+  - alfred
+  - atom
+  - caffeine
+  - colloquy
+  - cyberduck
   - docker
   - dropbox
-  - firefox
-  - google-chrome
-  - spotify
-  - skitch
-  - slack
-  - atom
-  - cyberduck
+  - eclipse-java
   - evernote
+  - firefox
+  - flux
+  - google-chrome
+  - google-drive-file-stream
+  - google-earth-pro
+  - gpg-suite
+  - iterm2
+  - java
+  - keepingyouawake
+  - keybase
+  - krita
+  - libreoffice
+  - little-snitch
+  - omnidisksweeper
   - omnifocus
-  - omnioutliner
   - omnigraffle
-  - 1password
+  - omnioutliner
+  - satellite-eyes
+  - screenflow
   - scrivener
+  - sfdx
   - signal
   - sketch
-  - vagrant
-  - virtualbox
+  - skitch
+  - slack
+  - sonos
+  - soqlxplorer
+  - spotify
+  - tad
+  - thunderbird
   - tomighty
   - torbrowser
-  - zotero
-  - iterm2
-  - satellite-eyes
+  - vagrant
+  - virtualbox
   - vlc
-  - little-snitch
-  - colloquy
-  - java
-  - libreoffice
-  - tad
-  - caffeine
-  - krita
-  - google-earth-pro
-  - alfred
-  - soqlxplorer # CTF specific
-  - eclipse-java
-  - sfdx
-  - google-drive-file-stream
+  - zoomus
+  - zotero
 
 pip_install_packages:
     - awscli
